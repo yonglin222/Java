@@ -17,6 +17,10 @@ public class TypeChange2 {
         System.out.println(value4_1); // -128 오류
         int value5 = (int)3.5; // 소수점이하자리를 없앨 목적으로 사용함
         System.out.println(value5); // 3
+        byte value6 = 1;
+        int value7 = value6 + value4;
+        System.out.println(value7); // 128
+        System.out.println(value6); // 1
 
         // 롱과 픗록의 관계
         //? 압축할때는 플롯을 이용하나요?/ 게임할때는 플롯을 많이 씀
