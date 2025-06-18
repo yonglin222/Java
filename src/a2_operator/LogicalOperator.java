@@ -1,9 +1,4 @@
-package s2_operator;
-
-import com.sun.security.jgss.GSSUtil;
-import org.w3c.dom.ls.LSOutput;
-
-import java.sql.SQLOutput;
+package a2_operator;
 
 public class LogicalOperator {
     public static void main(String[] args) {

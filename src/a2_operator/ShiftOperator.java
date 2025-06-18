@@ -1,4 +1,4 @@
-package s2_operator;
+package a2_operator;
 
 public class ShiftOperator {
     public static void main(String[] args) {
@@ -7,18 +7,26 @@ public class ShiftOperator {
         System.out.println(2 << 1); // 4
         // 0000 0010
         // << 1 = 0000 0100
-        System.out.println(4 >> 1); // 8
+        System.out.println(4 << 1); // 8
         // 0000 1000 = 8
         System.out.println(4 >> 1); // 2
         // 0000 0010 = 2
         System.out.println(2 >> 1); // 1
         // 0000 0001 = 1
+        System.out.println();
         System.out.println(3 << 1); // 0000 0110 = 6
         System.out.println(3 << 2); // 0000 1100 = 12
+        System.out.println();
         System.out.println(3 << 3); // 0001 1000 = 24
+        System.out.println(Integer.toBinaryString(3));
+        System.out.println(0b11000);
+        System.out.println();
         System.out.println(-3 << 1); // 0000 0110 = -6
+        System.out.println(Integer.toBinaryString(-3));
+        System.out.println(0b11111111111111111111111111111010);
         System.out.println(-3 << 2); // 0000 1100 = -12
         System.out.println(-3 << 3); // 0001 1000 = -24
+        System.out.println();
         // << 왼쪽 시프트는 2의제곱승을 곱하는 것과 같다
         // >> 오른쩍 시프트는 2의 제곱승을 나누는 것과 같다
         // 곱셈과 나눗셈의 계산을 매우 빠르게 할 수 있음.

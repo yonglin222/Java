@@ -1,4 +1,4 @@
-package s2_operator;
+package a2_operator;
 
 public class RelationOperator {
     public static void main(String[] args) {
