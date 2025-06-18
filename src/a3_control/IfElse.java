@@ -45,8 +45,10 @@ public class IfElse {
 
         // 이름 입력
         System.out.println("이름을 입력해주세요: ");
-        String userName = scanner.nextLine(); // 엔터입력 이후에 라이 전체를 받는다
+        String userName = scanner.nextLine(); // 엔터입력 이후에 라인 전체를 받는다
         System.out.println(userName);
         System.out.println("end");
+        scanner.close(); // 스캐너 객체를 메모리에서 삭제시킴
+
     }
 }
