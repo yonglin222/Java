@@ -33,7 +33,7 @@ public class IfElse {
         else {
             System.out.println("나머지");
         }
-//        scanner.nextLine(); // Scanner가 가지고 있는 엔터버퍼를 비워주는 역할
+        scanner.nextLine(); // Scanner가 가지고 있는 엔터버퍼를 비워주는 역할
         // 엔터버퍼 : ???
         // 하드코딩 : 내 수정 없이 바뀔수 없음
         // 동적코드 필요 = 유저가 나이 입력하게 만들어야함 = ui
@@ -48,7 +48,7 @@ public class IfElse {
         String userName = scanner.nextLine(); // 엔터입력 이후에 라인 전체를 받는다
         System.out.println(userName);
         System.out.println("end");
+        System.out.println();
         scanner.close(); // 스캐너 객체를 메모리에서 삭제시킴
-
     }
 }
