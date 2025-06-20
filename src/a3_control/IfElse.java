@@ -6,13 +6,13 @@ public class IfElse {
         // if조건문(선택제어문) if () {} else {}
         int a = 10;
         // if문의 기본형태1 : if() {}
-        if (a>5) { // 조건이 거짓이면 실행되는 코드가 없음
+        if (a > 5) { // 조건이 거짓이면 실행되는 코드가 없음
             System.out.println(a);
         }
         // if문의 기본형태2 : if() {sout()} else {sout()}
-        if (a>5) {
+        if (a > 5) {
             System.out.println(a);
-        }else {
+        } else {
             System.out.println("조건은 거짓");
         }
         // if문의 기본형태3 : if() {} else if() {} else {}
@@ -23,14 +23,11 @@ public class IfElse {
         int userAge = scanner.nextInt(); // 예외처리 필수 = 개발자가 의도한 상황이 아닌것//최소화 설계필요
         if (userAge >= 20 && userAge <= 29) {
             System.out.println("20대");
-        }
-        else if (userAge >= 30 && userAge <= 39) {
+        } else if (userAge >= 30 && userAge <= 39) {
             System.out.println("30대");
-        }
-        else if (userAge >= 40 && userAge <= 49) {
+        } else if (userAge >= 40 && userAge <= 49) {
             System.out.println("40대");
-        }
-        else {
+        } else {
             System.out.println("나머지");
         }
         scanner.nextLine(); // Scanner가 가지고 있는 엔터버퍼를 비워주는 역할
@@ -50,5 +47,31 @@ public class IfElse {
         System.out.println("end");
         System.out.println();
         scanner.close(); // 스캐너 객체를 메모리에서 삭제시킴
+
+        // if문의 중복 (중복에 제한 없음, 너무 중접하면 컴퓨터 랙)
+        int value1 = 5;
+        int value2 = 3;
+        if (value1 > 4) {
+            if (value2 > 2) {
+            System.out.println("실행1");
+            } else {
+                System.out.println("실행2");
+            }
+        }else {
+                System.out.println("실행3");
+        }
+        // if문의 code drilling 이슈
+        if (true) {
+            if (true) {
+                if (true) {
+                    if (true) {
+                        if (true) {
+                            // 가독성을 떨어뜨리므로 좋지 않은 코딩방법
+                            // 논리연산자로 묵거나 엔드사용
+                        }
+                    }
+                }
+            }
+        }
     }
 }
