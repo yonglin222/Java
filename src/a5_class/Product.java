@@ -4,19 +4,17 @@ public class Product {
     // 필드
     String productId; // 제품아이디 (고유값)
     String productName; // 제품명
-    double price; // 가격 (계산편의성대문에 double을 사용)
-    int Stock; // 재고수량
+    double price; // 가격 (계산편의성때문에 double을 사용)
+    int stock; // 재고수량
 
     // 생성자
-
     public Product() {
     }
-
     public Product(String productId, String productName, double price, int stock) {
         this.productId = productId;
         this.productName = productName;
         this.price = price;
-        this.Stock = stock;
+        this.stock = stock;
     }
 
     // 메서드
@@ -27,7 +25,7 @@ public class Product {
     }
     // 재고설정
     public int setStock(int newStock) {
-        this.Stock = newStock;
-        return this.Stock;
+        this.stock = newStock;
+        return this.stock;
     }
 }
