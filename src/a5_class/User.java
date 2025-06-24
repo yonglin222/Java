@@ -26,6 +26,7 @@ public class User {
     public String setPassword(String newPassword) {
         this.password = newPassword; // 해당객체의 패스워드
         return  this.password;
-    }
 
+
+    }
 }

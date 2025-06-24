@@ -16,7 +16,7 @@ public class Product {
         this.productId = productId;
         this.productName = productName;
         this.price = price;
-        Stock = stock;
+        this.Stock = stock;
     }
 
     // 메서드
