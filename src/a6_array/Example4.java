@@ -11,6 +11,11 @@ public class Example4 {
     public static int getMax(int[] numbers) {
         int max = 0;
         // 여기 코드 입력
+        for (int a : numbers) { // 42 17 88 5 63 29 76 34 51 10
+            if (a > max) {
+                max = a;
+            }
+        }
         return max;
     }
 }
