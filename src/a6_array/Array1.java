@@ -13,7 +13,7 @@ public class Array1 {
     public static void main(String[] args) {
         // 배열 Array
         // 자료구조 (Data Structure)
-        // 자료구조의 종류 : 배여, 리스트, 세트, 맵, 트리...
+        // 자료구조의 종류 : 배열, 리스트, 세트, 맵, 트리...
 
         // 배열의 선언 // 자바배열 수정불가
 

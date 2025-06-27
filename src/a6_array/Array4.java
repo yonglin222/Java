@@ -2,7 +2,7 @@ package a6_array;
 
 import a5_class.Student;
 
-public class Attay4 {
+public class Array4 {
     public static void main(String[] args) {
         // 반복문을 사용한배열의 순회
 
