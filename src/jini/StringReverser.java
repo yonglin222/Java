@@ -15,8 +15,9 @@ public class StringReverser {
         // 2. 새로운 char[] 배열을 같은 크기로 생성
         char[] reversedChars = new char[originalChars.length];
         // 3. for문을 이용해 원본 배열의 끝부터, 새 배열의 처음으로 문자를 복사
-        int chr = 0;
-        for ()
+        for (int i = 0; i < originalChars.length; i++) { //
+            reversedChars[i] = originalChars[originalChars.length - 1 - i];
+        }
         // 4. 완성된 새 배열을 다시 String으로 변환하여 리턴 (new String(charArray))
         return null; // 이 부분을 수정하세요.
     }
