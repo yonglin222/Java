@@ -1,7 +1,10 @@
 package a7_collection.List;
 
+import a3_control.WhileLoop;
+
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Iterator;
 import java.util.List;
 
 public class ArrayList3 {
@@ -81,13 +84,44 @@ public class ArrayList3 {
         // 오류 원인 왼쪽은 int[], 오른쪽은 Obhect[] (toArray()반환형 Obgect[])
         Object[] objArray= aList2.toArray();
         System.out.println(Arrays.toString(objArray));
-        Integer[] intArray = (Integer[]) aList2.toArray(); // 오류
+//        Integer[] intArray = (Integer[]) aList2.toArray(); // 오류
         // ClassCastException(Object[] -> Integer[] 다운캐스팅 하면서 발생
 
         // 어떻게하면 Integer[]로 변환할 수 있을까??
-        Integer[] intArray = aList2.toArray(new Integer[0]);
+        Integer[] intArray = aList2.toArray(new Integer[0]); // !!!
+        Integer[] intArray2 = aList2.toArray(new Integer[aList2.size()]);
         System.out.println(Arrays.toString(intArray));
+        System.out.println(Arrays.toString(intArray2));
         // new Integer[0]는 0의 크기를 가진 배열을 만드는게 아니라
         // aList2.size()와 같은 배열 크리고 만들라는 약속!
+
+        // #13. contains 탐색
+        boolean exist = aList2.contains(Integer.valueOf(100));
+        System.out.println(exist ? "탑색성공" : "탐색실패");
+
+        // #14. iteratur 컬렉션 요소를 순차적으로 탐색
+        System.out.println("#14");
+        Iterator<Integer> iterator = aList2.iterator();
+        // 탐색자는 다음 요소가 존재하면 true, 끝에 도달했으면 false리턴
+        // 탐색자는 일종의 자료구조상의 로봇(처음부터 끝까지 탑색하는 기능
+        // 자동으로 끝을 알려주시 깨문에 while 문에서도 안전 (무한루프x)
+        while (iterator.hasNext()) {
+            Integer a = iterator.next();
+            // 형재 탐색자가 위치한 요소(객체)를 반환하고 자동을 ㅗ다음르올 넘어감
+            // 그러므로 따로 증감식이 필요 없음
+            System.out.println(a);
+            }
+
+        while (iterator.hasNext()) {
+            Integer a = iterator.next();
+            System.out.println(a);
+        }
+        System.out.println();
+        // 포문 보다 사용하기 쉬움 (증감식 없음)
+//        int count = 0;
+//        for (int data : array) {
+//            if (data == 10)
+//                count++;
+//        }
     }
 }

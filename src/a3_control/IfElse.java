@@ -50,15 +50,15 @@ public class IfElse {
 
         // if문의 중복 (중복에 제한 없음, 너무 중접하면 컴퓨터 랙)
         int value1 = 5;
-        int value2 = 3;
-        if (value1 > 4) {
-            if (value2 > 2) {
-            System.out.println("실행1");
+        int value2 = 2;
+        if (value1 > 4) { // 참
+            if (value2 > 2) { // 참
+            System.out.println("실행1"); // 참참
             } else {
-                System.out.println("실행2");
+                System.out.println("실행2"); // 참거짓
             }
         }else {
-                System.out.println("실행3");
+                System.out.println("실행3"); // 거짓참 // 거짓거짓
         }
         // if문의 code drilling 이슈
         if (true) {

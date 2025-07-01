@@ -13,7 +13,7 @@ public class SwitchCase {
         // }
         int a=  1;
         switch (a) {
-            case 1: // ??? case는 어디에 저장되나요???
+            case 1: // ??? case는 어디에 저장되나요???레이블이라 메모리 할당x
                 System.out.println("A");
                 break;
             case 2:
