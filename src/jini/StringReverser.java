@@ -19,6 +19,6 @@ public class StringReverser {
             reversedChars[i] = originalChars[originalChars.length - 1 - i];
         }
         // 4. 완성된 새 배열을 다시 String으로 변환하여 리턴 (new String(charArray))
-        return null; // 이 부분을 수정하세요.
+        return new String(reversedChars); // 이 부분을 수정하세요.
     }
 }
