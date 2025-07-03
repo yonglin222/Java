@@ -70,8 +70,7 @@ public class Example1 {
         Student s1 = new Student("steve1234", "Steve Jones", 1);
 //        s1.grade = 2; // 오류 grade가 private이므로 참조 불가
         s1.setGrade(2);
-        System.out.println(s1);
-        // Student{studentId='steve1234', name='Steve Jones', grade=2}
+        System.out.println(s1); // Student{studentId='steve1234', name='Steve Jones', grade=2}
         s1.setGrade(100);
         System.out.println(s1); // 100학년은 없음. 실수로 잘못된 값이 저장됨
     }

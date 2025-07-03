@@ -7,8 +7,8 @@ class Human {
     void sleep(){}
 }
 class Student extends Human {
-    int studentID;
-    void goToSchool() {}
+    int studentID; // 객체생성
+    void goToSchool() {} // 메서드 생성
 }
 class Worker extends Human {
     int workerID;

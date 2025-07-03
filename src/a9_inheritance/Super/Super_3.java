@@ -2,7 +2,7 @@ package a9_inheritance.Super;
 
 class A1 {
     A1() {
-        this(3); // this() 또는 super()는 반드시 첫번째 줄에 있어야 함!!!
+        this(3); // 중요 this() 또는 super()는 반드시 첫번째 줄에 있어야 함!!!
         System.out.println("A1생성자 1");
         // this(3); // 에러!!
     }
