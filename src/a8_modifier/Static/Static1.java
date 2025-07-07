@@ -15,6 +15,8 @@ public class Static1 { // ???스태틱 영억 저장위치 심화공부 필요
      */
     public static void main(String[] args) {
         A a1 = new A(); // 인스턴스화, 객체화 -> m=3, n = (스태틱영역의 n=5)
+        A a2 = new A(); // 이렇게 하면 어떻게 되?
+        int a3 = 5;
         System.out.println(a1.m); // 3
         System.out.println(a1.n); // 5
 
@@ -26,6 +28,8 @@ public class Static1 { // ???스태틱 영억 저장위치 심화공부 필요
         A.n = 6;
         System.out.println(a1.n); // 6
         System.out.println(A.n); // 6
+        // Class A -> A반이라는 교실
+        //
 
         A a2 = new A(); // 인스턴스화, 객체화 -> m=3, n = (스태틱영역의 n=6)
         System.out.println(a2.n); //

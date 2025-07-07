@@ -10,7 +10,7 @@ class B1 extends A {
         super.abc();
     }
     //@Override
-    //void bcd() {} // 오버라이드 불가
+    //void bcd() {} // 상속시 오버라이드 불가
 }
 final class C {}
 //class D extends C {} // final 클래스는 상속 불가!

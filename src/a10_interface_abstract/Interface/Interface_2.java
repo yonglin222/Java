@@ -3,10 +3,12 @@ package a10_interface_abstract.Interface;
 // 인터페이스의 구성요소
 interface A1 {
     // 필드는 상수만 있음
+    int number = 5; // 자동으로 public static final 붙음
     public static final int a = 3;
     // 생성자 X
+//    A1() {} // 오류발생
     // 추상메서드
-    public abstract void abc();
+    public abstract void abc(); // 꼭있어야함
 }
 interface A2 {
     int b = 3; // 생략해도 자동으로 public static final이 추가됨

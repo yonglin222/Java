@@ -24,7 +24,7 @@ class Dog extends Animal {
 public class Abstract_2 {
     public static void main(String[] args) {
         // <중요> 추상클래스는 인스턴스화할 수 없음!
-        //Animal animal = new Animal();
+//        Animal animal = new Animal();
         Animal animal1 = new Cat();
         Animal animal2 = new Dog();
         animal1.cry();
