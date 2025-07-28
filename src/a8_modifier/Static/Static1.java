@@ -31,7 +31,7 @@ public class Static1 { // ???스태틱 영억 저장위치 심화공부 필요
         // Class A -> A반이라는 교실
         //
 
-        A a2 = new A(); // 인스턴스화, 객체화 -> m=3, n = (스태틱영역의 n=6)
+//        A a2 = new A(); // 인스턴스화, 객체화 -> m=3, n = (스태틱영역의 n=6)
         System.out.println(a2.n); //
         a2.n = 7; // 스태틱영역의 n=6
         System.out.println(a2.n); // 7
