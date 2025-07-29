@@ -8,7 +8,7 @@ public class JdbcExample1 {
     // #1. 데이터베이스 연결 정보
     private static final String URL = "jdbc:mariadb://localhost:3306/testdb";
     private static final String USER = "root";
-    private static final String PASSWORD = "root";
+    private static final String PASSWORD = "1234";
 
     // #2. 정보를 조회하는 메서드 정의
     // 고객번호로 고객 정보 조회
