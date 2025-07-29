@@ -2,12 +2,12 @@ package jdbc;
 
 public class Department { // 부서
     private String DepartmentId; // 부서번호
-    private double DepartmentName; // 부서명
+    private String DepartmentName; // 부서명
 
     public Department() {
     }
 
-    public Department(String departmentId, double departmentName) {
+    public Department(String departmentId, String departmentName) {
         DepartmentId = departmentId;
         DepartmentName = departmentName;
     }
@@ -20,11 +20,11 @@ public class Department { // 부서
         DepartmentId = departmentId;
     }
 
-    public double getDepartmentName() {
+    public String getDepartmentName() {
         return DepartmentName;
     }
 
-    public void setDepartmentName(double departmentName) {
+    public void setDepartmentName(String departmentName) {
         DepartmentName = departmentName;
     }
 
@@ -32,7 +32,7 @@ public class Department { // 부서
     public String toString() {
         return "Department{" +
                 "DepartmentId='" + DepartmentId + '\'' +
-                ", DepartmentName=" + DepartmentName +
+                ", DepartmentName='" + DepartmentName + '\'' +
                 '}';
     }
 }
